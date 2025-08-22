@@ -1,6 +1,6 @@
 # 🩺 Breast Cancer Diagnostics DL App
 
-This project predicts whether a breast tumor is benign or malignant using a deep learning model trained on breast cancer diagnostic data. The model is built with TensorFlow/Keras to classify tumors based on extracted features. The project includes data exploration, preprocessing, model training, and deploying a prediction API with Flask. The frontend is created using ReactJS with Axios for API integration and styled with TailwindCSS.
+This project predicts whether a breast tumor is benign or malignant using a deep learning model trained on breast cancer diagnostic data. The model is built with TensorFlow/Keras to classify tumors based on extracted features. The project includes data exploration, preprocessing, model training, a Power BI dashboard for business insights, and deploying a prediction API with Flask. The frontend is created using ReactJS with Axios for API integration and styled with TailwindCSS.
 
 ---
 
@@ -14,7 +14,7 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 ## 🔧 Tech Stack
 
-- Data Analysis & Visualization: pandas, numpy, matplotlib, seaborn  
+- Data Analysis & Visualization: pandas, numpy, matplotlib, seaborn, power BI
 - Modeling: TensorFlow/Keras  
 - Backend: Flask (for serving the prediction API)  
 - Frontend: ReactJS, Axios, TailwindCSS (for building the UI)  
@@ -23,8 +23,11 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 ## 📁 Project Structure
 
-- **model_training/**  
-  Contains Jupyter notebooks for data exploration, preprocessing, and model training.  
+- **model-training/**  
+  Contains Jupyter notebooks for data exploration, preprocessing, and model training.
+
+- **power-bi/**  
+  Contains Power BI reports and dashboards for visualizing key dataset insights and model performance.
 
 - **models/**  
   Contains the saved trained model and scaler files.  
@@ -50,6 +53,7 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 - Visualizing counts of benign and malignant cases  
 - Checking for missing values and data quality  
 - Histograms and bar plots of important features  
+- **Power BI dashboards for high-level insights and data storytelling**  
 
 ---
 
@@ -79,6 +83,7 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 - Classification report including precision, recall, F1-score  
 - Confusion matrix visualization to analyze true and false positives/negatives  
 - Plotting model loss curves to check training progress  
+- **Power BI report for tracking evaluation metrics and model performance over time**  
 
 ---
 
@@ -100,6 +105,19 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 ---
 
+## 📈 7. Power BI Dashboard
+
+The **Power BI** dashboard provides:
+
+- Interactive charts showing benign vs malignant cases  
+- Feature importance insights based on correlation and model coefficients  
+- Confusion matrix and classification performance visuals  
+- Drill-down capabilities for different feature groupings  
+
+📁 Files located in the `power-bi/` folder can be opened with Power BI Desktop.
+
+---
+
 ## 🚀 Getting Started
 
 - Clone the repository  
@@ -107,18 +125,20 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 - Run the model training notebook to train and save the model and scaler  
 - Start the Flask backend server to serve the prediction API  
 - Launch the React frontend application  
+- Open Power BI Desktop to explore the `.pbix` report  
 - Access the app in your browser (e.g., http://localhost:3000)  
 
 ---
 
 ## 🛠 Technologies Used
 
-| Layer      | Tools                        |
-|------------|------------------------------|
-| Data/EDA   | pandas, seaborn, matplotlib  |
-| Modeling   | TensorFlow/Keras, scikit-learn |
-| Backend/API| Flask, joblib, numpy          |
-| Frontend   | ReactJS, Axios, TailwindCSS  |
+| Layer       | Tools                              |
+|-------------|------------------------------------|
+| Data/EDA    | pandas, seaborn, matplotlib        |
+| Visualization | Power BI                    |
+| Modeling    | TensorFlow/Keras, scikit-learn     |
+| Backend/API | Flask, joblib, numpy               |
+| Frontend    | ReactJS, Axios, TailwindCSS        |
 
 ---
 
