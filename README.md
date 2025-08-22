@@ -107,14 +107,40 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 ## 📈 7. Power BI Dashboard
 
-The **Power BI** dashboard provides:
+The Power BI dashboard provides:
 
 - Interactive charts showing benign vs malignant cases  
 - Feature importance insights based on correlation and model coefficients  
 - Confusion matrix and classification performance visuals  
 - Drill-down capabilities for different feature groupings  
 
-📁 Files located in the `power-bi/` folder can be opened with Power BI Desktop.
+DAX Measures Used:
+
+Diagnosis = IF('CancerData'[benign_0__mal_1] = 1, "Malignant", "Benign")
+
+Total Patients = COUNTROWS('CancerData')
+
+Total Malignant = CALCULATE([Total Patients], 'CancerData'[Diagnosis] = "Malignant")
+
+Malignancy Rate = DIVIDE([Total Malignant], [Total Patients])
+
+Visuals Included:
+
+- Card Visuals showing total patients, malignant cases, malignancy rate  
+- Donut Chart displaying benign vs malignant distribution  
+- Stacked Bar Chart visualizing diagnostic feature trends  
+- Data Table with computed diagnosis  
+- Slicer for interactive filtering  
+
+Insights:
+
+- Understand class imbalance  
+- Identify patterns in key diagnostic features  
+- Filter and drill down into case groups  
+- Highlight outliers or anomalies  
+- Enhance interpretability of model outcomes  
+
+Power BI report files located in `power-bi/` folder.
 
 ---
 
