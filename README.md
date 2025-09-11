@@ -107,13 +107,6 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 ## 📈 7. Power BI Dashboard
 
-The Power BI dashboard provides:
-
-- Interactive charts showing benign vs malignant cases  
-- Feature importance insights based on correlation and model coefficients  
-- Confusion matrix and classification performance visuals  
-- Drill-down capabilities for different feature groupings  
-
 DAX Measures Used:
 
 Diagnosis = IF('CancerData'[benign_0__mal_1] = 1, "Malignant", "Benign")
