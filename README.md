@@ -16,8 +16,8 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 - Data Analysis & Visualization: pandas, numpy, matplotlib, seaborn, power BI
 - Modeling: TensorFlow/Keras  
-- Backend: Flask (for serving the prediction API)  
-- Frontend: ReactJS, Axios, TailwindCSS (for building the UI)  
+- Server: Flask (for serving the prediction API)  
+- Client: ReactJS, Axios, TailwindCSS (for building the UI)  
 
 ---
 
@@ -35,10 +35,10 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 - **data/**  
   Contains the original breast cancer dataset CSV file.  
 
-- **backend/**  
+- **server/**  
   Contains the Flask API code for serving model predictions.  
 
-- **frontend/**  
+- **client/**  
   ReactJS application that interacts with the backend API using Axios and styled with TailwindCSS.  
 
 - **README.md**  
@@ -53,7 +53,7 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 - Visualizing counts of benign and malignant cases  
 - Checking for missing values and data quality  
 - Histograms and bar plots of important features  
-- **Power BI dashboards for high-level insights and data storytelling**  
+- Power BI dashboards for high-level insights and data storytelling  
 
 ---
 
@@ -83,11 +83,11 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 - Classification report including precision, recall, F1-score  
 - Confusion matrix visualization to analyze true and false positives/negatives  
 - Plotting model loss curves to check training progress  
-- **Power BI report for tracking evaluation metrics and model performance over time**  
+- Power BI report for tracking evaluation metrics and model performance over time  
 
 ---
 
-## 🌐 5. Flask Backend
+## 🌐 5. Flask Server
 
 - Loads the trained model and scaler on startup  
 - Provides REST API endpoint `/predict` for predictions  
@@ -96,7 +96,7 @@ The dataset can be found in public repositories such as the UCI Machine Learning
 
 ---
 
-## 💻 6. React Frontend
+## 💻 6. React Client
 
 - Form interface for users to input diagnostic features  
 - Axios used to send data to Flask backend and receive prediction  
@@ -163,8 +163,8 @@ Power BI report files located in `power-bi/` folder.
 | Data/EDA    | pandas, seaborn, matplotlib        |
 | Visualization | Power BI                    |
 | Modeling    | TensorFlow/Keras, scikit-learn     |
-| Backend/API | Flask, joblib, numpy               |
-| Frontend    | ReactJS, Axios, TailwindCSS        |
+| Server/API | Flask, joblib, numpy               |
+| Client    | ReactJS, Axios, TailwindCSS        |
 
 ---
 
