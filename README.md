@@ -49,7 +49,6 @@ Features include measurements like:
 | **Backend API** | Flask, joblib |
 | **Frontend** | ReactJS, Axios, TailwindCSS |
 | **Business Intelligence** | Power BI |
-| **Deployment** | Python, Node.js |
 
 
 ## ✨ Features
